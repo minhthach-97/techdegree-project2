@@ -14,7 +14,6 @@ h1 {
     margin-top: 0;
 }
 
-
 h3 {
     font-weight: 600px;
 }
@@ -119,9 +118,13 @@ footer {
         margin-bottom: 100px;
     }
     .project {
-        float: left;
-        width: 45%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         margin: auto;
+        width: 45%;
+
     }
    .project:nth-child(even) {
     margin-right: 7%;
@@ -133,6 +136,8 @@ footer {
    .portfolio-text {
     padding: 0 25px;
    }
+
+
    .contact-container {
     max-width: 75%;
     margin: auto;
@@ -175,14 +180,15 @@ footer {
     .project:nth-child(even) {
         margin-right: initial;
     }
-    .project.proj-1,
-    .project.proj-2,
-    .project.proj-4,
-    .project.proj-5 {
-        
-        margin-right: 5%;
-       
-    }
+   
+    .portfolio{
+        display: flex;
+      flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 100%;}
+    
     .project {
         width: 30%;
         
